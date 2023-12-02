@@ -1,3 +1,1 @@
-# Test1
-# Test1
-# search-youtube-comments
+This is a chrome extension that will allow you to search the youtube comments
