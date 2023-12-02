@@ -38,7 +38,7 @@ function fetchAllComments(apiUrl, comments = []) {
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.action === "sendURLAndQuery") {
-    const apiKey = "AIzaSyDjkoeL8J4NSgBfmvAySahgQz67tBslIOQ";
+    const apiKey = process.env.API_KEY;
     const currentURL = request.url;
     const regex = /v=([a-zA-Z0-9_-]+)/;
     const match = currentURL.match(regex);
